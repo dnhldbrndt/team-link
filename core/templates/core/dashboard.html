@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>My Bookmarks</h2>
+  <ul>
+    {% for bookmark in bookmarks %}
+      <li>{{ bookmark.project.title }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
